@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1 {
+    @apply text-h1Mob md:text-h1Desc;
+}
+
+p {
+    @apply text-pMob md:text-pDesc text-slate-400;
+}
+
+a {
+    @apply text-slate-500;
+}
+
+/* Light theme */
+.light {
+    @apply bg-bgLight;
+}
+
+.light button {
+    @apply bg-black;
+}
+
+.light h1 {
+    @apply text-black;
+}
+
+.light a:active {
+    @apply text-black;
+}
+
+
+
+/* Dark theme */
+.dark {
+    @apply bg-black;
+}
+
+.dark body {
+    @apply bg-black;
+}
+
+.dark button {
+    @apply bg-white;
+}
+
+.dark h1 {
+    @apply text-white;
+}
+
+.dark a:active {
+    @apply text-white;
+}
