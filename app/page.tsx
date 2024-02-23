@@ -8,8 +8,8 @@ export default function Home() {
         <h1 className={`${archivo.className} font-bold`}>Simply said,<br/> I love design and code.</h1>
         <h4 className="text-bronze font-semibold text-base md:text-lg">And... I love Asia food</h4>
         </div>
-        <p className="w-full md:w-[508px] text-justify">I'm Junior Full stack developer with 1 year of professional experience in building web applications using <span className="text-bronze font-semibold">React.</span></p>
-        <p className="w-full md:w-[508px] text-justify">I'm Focused on clean, modular, and efficient code that easy to extend and support.</p>
+        <p className="w-full md:w-[508px] text-justify">I&apos;m Junior Full stack developer with 1 year of professional experience in building web applications using <span className="text-bronze font-semibold">React.</span></p>
+        <p className="w-full md:w-[508px] text-justify">I&apos;m Focused on clean, modular, and efficient code that easy to extend and support.</p>
     </div>
   );
 }

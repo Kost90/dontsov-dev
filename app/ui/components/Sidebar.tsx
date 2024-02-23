@@ -30,6 +30,7 @@ function Sidebar() {
       {links.map((el) => (
         <Link
           href={el.href}
+          key={el.name}
           className={clsx({ "font-bold text-bronze": el.href === pathname })}
         >
           {el.name}
