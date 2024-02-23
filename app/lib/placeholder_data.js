@@ -1,5 +1,6 @@
-export const projects = [
+const projects = [
     {
+        id:1,
         name:'All plastic world',
         description:'React.js SPA, created with Vite. Backend created with PostgreSQL and Sequelize ORM. Animations created with framer motion and 3D animation - created with React three fiber (three.js). CSS created with Tailwind CSS. Currently in progress.',
         photoUrl:'../../public/pictures/allplasticworld.png',
@@ -9,6 +10,7 @@ export const projects = [
         logoUrld:'../../public/svg/react-logo.svg',
     },
     {
+        id:2,
         name:'Aperture',
         description:'Landing responsive website. Created using HTML, SCSS, JavaScript.',
         photoUrl:'../../public/pictures/apertur.png',
@@ -18,6 +20,7 @@ export const projects = [
         logoUrld:'../../public/svg/html-1.svg',
     },
     {
+        id:3,
         name:'DomiLTD',
         description:'Gatsby.js website with GraphQL querys. Animations created with framer motion.',
         photoUrl:'../../public/pictures/domiltd.png',
@@ -27,6 +30,7 @@ export const projects = [
         logoUrld:'../../public/svg/gatsby.svg',
     },
     {
+        id:4,
         name:'Hestiya BTI',
         description:'Full stack Next.js app with appointment Scheduling. Data saving in the MongoDB',
         photoUrl:'../../public/pictures/hestiya-bti.png',
@@ -36,6 +40,7 @@ export const projects = [
         logoUrld:'../../public/next.svg',
     },
     {
+        id:5,
         name:'Hlegals',
         description:'Fist website created by myself, with jquery, slick slider and some animation libraries.',
         photoUrl:'../../public/pictures/hlegal.png',
@@ -45,6 +50,7 @@ export const projects = [
         logoUrld:'../../public/svg/html-1.svg',
     },
     {
+        id:6,
         name:'DM Makeup',
         description:'Front end: Next.js app. Landing page with load more photos logic.',
         photoUrl:'../../public/pictures/makeup.png',
@@ -54,6 +60,7 @@ export const projects = [
         logoUrld:'../../public/next.svg',
     },
     {
+        id:7,
         name:'Map app',
         description:'React app with integrated map. You can add new object to the map, all objects are clustering. When you zoomin or zoomout tour cardlist is filtering and show you objects are you seeing in your map. All objects in a map a clickebled.',
         photoUrl:'../../public/pictures/mapapp.png',
@@ -63,6 +70,7 @@ export const projects = [
         logoUrld:'../../public/svg/react-logo.svg',
     },
     {
+        id:8,
         name:'Resume generator',
         description:'Full stack React web application, you can create a CV with ChatGPT API.',
         photoUrl:'../../public/pictures/resume-generator.png',
@@ -72,6 +80,7 @@ export const projects = [
         logoUrld:'../../public/svg/react-logo.svg',
     },
     {
+        id:9,
         name:'TODO APP',
         description:'TODO app in html,css and javascript. You can add task, edit task and delete task. All information about your tasks saving in local storage of browser.',
         photoUrl:'../../public/pictures/to-do-app.png',
@@ -81,3 +90,6 @@ export const projects = [
         logoUrld:'../../public/svg/logo-javascript.svg',
     },
 ]
+
+module.exports = projects
+  

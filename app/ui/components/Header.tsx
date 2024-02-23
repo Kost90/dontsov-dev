@@ -13,9 +13,9 @@ function Header() {
   return (
     <header className="flex items-center justify-between p-3 md:p-6 relative">
       <div>
-        <h3 className={`${archivo.className} font-semibold relative z-10`}>
+        <h2 className={`${archivo.className} font-bold relative z-10 text-lg`}>
           KDontsov.
-        </h3>
+        </h2>
       </div>
       <Button
         className={`w-8 h-8 block md:hidden`}

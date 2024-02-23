@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <Themeprovider>
         <Header />
-        <main className="flex w-full px-6 py-20 h-screen">
+        <main className="flex w-full px-6 py-20 md:h-screen">
         <Sidebar/>
         {children}
         </main>
