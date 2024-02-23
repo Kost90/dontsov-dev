@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply w-full min-h-screen;
+}
 
 h1 {
     @apply text-h1Mob md:text-h1Desc;
@@ -20,18 +23,17 @@ a {
     @apply bg-bgLight;
 }
 
-.light button {
-    @apply bg-black;
+.light h1 {
+    @apply text-black;
 }
 
-.light h1 {
+.light h3 {
     @apply text-black;
 }
 
 .light a:active {
     @apply text-black;
 }
-
 
 
 /* Dark theme */
@@ -43,14 +45,19 @@ a {
     @apply bg-black;
 }
 
-.dark button {
-    @apply bg-white;
+.dark h1 {
+    @apply text-white;
 }
 
-.dark h1 {
+.dark h3 {
     @apply text-white;
 }
 
 .dark a:active {
     @apply text-white;
+}
+
+.dark svg {
+    /* fill: white; */
+    color: white;
 }
