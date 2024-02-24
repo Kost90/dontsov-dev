@@ -1,10 +1,10 @@
 "use client";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import { Swiper, SwiperSlide} from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Navigation} from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import Allplastic from "../../../public/pictures/allplasticworld.png";
 import Aperture from "../../../public/pictures/apertur.png";
 import "./styles.css";

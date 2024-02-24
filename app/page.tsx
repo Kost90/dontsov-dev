@@ -6,6 +6,7 @@ import { LogosArr } from "./ui/components/Svg";
 type LogosProps = {
   src: string;
   alt: string;
+  key:number;
 };
 
 export default function Home() {
@@ -36,7 +37,7 @@ export default function Home() {
         <p>My technology stack is:</p>
         <div className="flex items-center gap-2 flex-wrap">
           {LogosArr.map((el, i) => (
-            <Logos src={el} alt={`logo${i}`} />
+            <Logos src={el} alt={`logo${i}`} key={i}/>
           ))}
         </div>
       </div>
@@ -45,6 +46,6 @@ export default function Home() {
   );
 }
 
-function Logos({ src, alt }: LogosProps) {
-  return <Image src={src} alt={alt} className="w-8 h-8 md:w-12 md:h-12" />;
+function Logos({ src, alt, key }: LogosProps) {
+  return <Image src={src} alt={alt} className="w-8 h-8 md:w-12 md:h-12"  key={key}/>;
 }
