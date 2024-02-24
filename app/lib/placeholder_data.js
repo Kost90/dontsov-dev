@@ -91,5 +91,7 @@ const projects = [
     },
 ]
 
-module.exports = projects
+const techLogos = ['../../public/svg/css-3.svg','../../public/svg/gatsby.svg','../../public/svg/github-mark.svg','../../public/svg/graphql-icon.svg','../../public/svg/html-1.svg','../../public/svg/logo-javascript.svg','../../public/svg/ts-logo-round-256.svg','../../public/svg/nodejs-1.svg','../../public/next.svg','../../public/svg/mongodb-icon-2.svg','../../public/svg/postgresql.svg','../../public/svg/react-logo.svg','../../public/svg/sass-1.svg','../../public/svg/redux-logo-svgrepo-com.svg','../../public/svg/tailwind-css-2.svg']
+
+module.exports = {projects,techLogos}
   
