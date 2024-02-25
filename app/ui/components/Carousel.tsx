@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,7 +23,11 @@ function Carousel() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-    <div className="h-[358px] w-full mb-5">
+    <motion.div 
+    initial={{opacity:0,y:20}}
+    animate={{opacity:1,y:0}}
+    transition={{delay: 7.5, duration:0.5}}
+    className="h-[358px] w-full mb-5">
       <div className="flex items-center gap-2 justify-end">
         <button
           type="button"
@@ -136,7 +141,7 @@ function Carousel() {
           />
         </SwiperSlide>
       </Swiper>
-    </div>
+    </motion.div>
   );
 }
 
