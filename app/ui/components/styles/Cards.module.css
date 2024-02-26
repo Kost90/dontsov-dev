@@ -1,0 +1,9 @@
+.div_hover {
+  @apply absolute flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500 w-full h-full hover:bg-black gap-5 cursor-pointer;
+}
+.div_hover:hover h2 {
+  @apply translate-y-1/4 transition-transform duration-1000;
+}
+.div_hover:hover img {
+  @apply -translate-y-3/4 transition-transform duration-1000;
+}/*# sourceMappingURL=Cards.module.css.map */

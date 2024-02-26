@@ -1,9 +1,8 @@
-import Image from "next/image";
-import Carousel from "./ui/components/Carousel";
-import { LogosArr } from "./ui/components/Svg";
+import { LogosArr } from "./lib/Svg";
 import Typewritter from "./ui/components/Typewritter";
 import Paragraphs from "./ui/components/Paragraphs";
 import Logoslist from "./ui/components/Logoslist";
+import CardWrapper from "./ui/components/Cards";
 
 export default function Home() {
   return (
@@ -12,19 +11,17 @@ export default function Home() {
       style={{ scrollbarWidth: "none" }}
     >
       <div className="flex flex-col gap-3">
-      <Typewritter/>
+        <Typewritter />
       </div>
-      <Paragraphs/>
+      <Paragraphs />
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2 flex-wrap justify-center">
           {LogosArr.map((el, i) => (
-            <Logoslist src={el} alt={`logo${i}`} key={i} i={i}/>
+            <Logoslist src={el.src} alt={`logo${i}`} key={i} i={i} />
           ))}
         </div>
       </div>
-      <Carousel />
+      <CardWrapper />
     </div>
   );
 }
-
-

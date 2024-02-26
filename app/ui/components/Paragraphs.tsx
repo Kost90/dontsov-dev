@@ -8,7 +8,7 @@ function Paragraphs() {
       <motion.p
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 4.8, duration: 0.5 }}
+        transition={{ delay: 4.5, duration: 0.5 }}
         className="w-full md:w-[508px] text-justify"
       >
         I&apos;m Junior Full stack developer with 1 year of professional
@@ -18,17 +18,20 @@ function Paragraphs() {
       <motion.p
         initial={{ opacity: 0, x: 20 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 5.3, duration: 0.5 }}
+        transition={{ delay: 5, duration: 0.5 }}
         className="w-full md:w-[508px] text-justify"
       >
         I&apos;m Focused on clean, modular, and efficient code that easy to
         extend and support.
       </motion.p>
-      <motion.p 
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 6, duration: 0.5 }}
-      className="text-black font-semibold">My technology stack is:</motion.p>
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 5.5, duration: 0.5 }}
+        className="text-black font-semibold"
+      >
+        My technology stack is:
+      </motion.p>
     </>
   );
 }

@@ -1,5 +1,5 @@
 const { db } = require("@vercel/postgres");
-const projects = require("../app/lib/placeholder_data");
+const {projects} = require("../app/lib/placeholder_data.ts");
 
 async function SeedProjects(project) {
   try {
@@ -13,7 +13,7 @@ async function SeedProjects(project) {
         project_code VARCHAR(255),
         project_url VARCHAR(255),
         type VARCHAR(50),
-        logo_url VARCHAR(255)
+        logoUrld TEXT[]
     )`;
 
     console.log(`Created "project" table`);
@@ -21,7 +21,7 @@ async function SeedProjects(project) {
     const insertedProjects = await Promise.all(
       projects.map((el, i) => {
         return project.sql`
-            INSERT INTO project (name,description,photo_url,project_code,project_url,type,logo_url)
+            INSERT INTO project (name,description,photo_url,project_code,project_url,type,logoUrld)
             VALUES(${el.name},${el.description},${el.photoUrl},${el.projectCode},${el.projectUrl},${el.type},${el.logoUrld})
             ON CONFLICT (id) DO NOTHING;
             `;
