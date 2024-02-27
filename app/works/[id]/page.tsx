@@ -1,12 +1,9 @@
-import React from "react";
-import Link from "next/link";
 import { fetchProjectbyId } from "@/app/lib/data";
 import Paragraphs from "@/app/ui/components/Paragraphs";
 import { filterTechLogosArray, filterPhoto } from "@/app/lib/utils";
 import Logoslist from "@/app/ui/components/Logoslist";
 import Imagecontainer from "@/app/ui/works/Imagecontainer";
 import Title from "@/app/ui/works/Title";
-import { Button } from "@/app/ui/components/Button";
 import Buttonswrapper from "@/app/ui/works/Buttonswrapper";
 
 async function page({ params }: { params: { id: string } }) {
@@ -28,7 +25,10 @@ async function page({ params }: { params: { id: string } }) {
         ))}
       </div>
       <Imagecontainer src={photo[0]} alt={`picture_of_${project[0].name}`} />
-      <Buttonswrapper hrefproject={project[0].project_url} hrefcode={project[0].project_code}/>
+      <Buttonswrapper
+        hrefproject={project[0].project_url}
+        hrefcode={project[0].project_code}
+      />
     </div>
   );
 }

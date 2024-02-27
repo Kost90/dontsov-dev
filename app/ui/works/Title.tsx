@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { archivo } from "../fonts";
 import { motion } from "framer-motion";
 
