@@ -1,38 +1,30 @@
 import { IProjects } from "./definitions";
 import { LogosArr } from "./Svg";
 import { PhotoList } from "./Photolist";
-import { StaticImageData } from "next/image";
 
-export const filterTechLogosArray = (arr: IProjects[]) => {
-  let finalArr: string[][] = [];
-  let subArr: string[][] = [];
-
-  for (let i = 0; i < arr.length; i++) {
-    subArr.push(arr[i].logourld);
-  }
-
-  for (let j = 0; j < subArr.length; j++) {
-    let logos: string[] = [];
-    for (let p = 0; p < subArr[j].length; p++) {
-      LogosArr.forEach((el) => {
-        if (el.name === subArr[j][p]) {
-          logos.push(el.src);
-        }
-      });
-    }
-    finalArr.push(logos);
-  }
-  return finalArr;
-};
-
-export const filterPhoto = (arr: IProjects[]) => {
-  let photos: StaticImageData[] = [];
-  arr.forEach((el) => {
+export const filterArray = (arr: IProjects[]) => {
+  let newArr: IProjects[] = arr;
+  let logosArr: string[] = [];
+  arr.forEach((el, i) => {
     PhotoList.forEach((subel) => {
       if (subel.name === el.photo_url) {
-        photos.push(subel.src);
+        newArr[i].photo_url = subel.src;
       }
     });
+    el.logourld.forEach((subel) => {
+      LogosArr.forEach((svg) => {
+        if (svg.name === subel) {
+          logosArr.push(svg.src);
+        }
+      });
+    });
+    newArr[i].logourld = logosArr;
+    logosArr = [];
   });
-  return photos;
+  return newArr;
+};
+
+export const filterphotoTabs = (arr: IProjects[], arg: string) => {
+  const newArr = arr.filter((el) => el.type === arg);
+  return newArr;
 };

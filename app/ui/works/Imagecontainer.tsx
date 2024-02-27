@@ -4,7 +4,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 
-function Imagecontainer({ src, alt }: { src: StaticImageData; alt: string }) {
+function Imagecontainer({
+  src,
+  alt,
+}: {
+  src: StaticImageData | string;
+  alt: string;
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

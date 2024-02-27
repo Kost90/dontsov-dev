@@ -2,7 +2,6 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { StaticImageData } from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
@@ -14,9 +13,7 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 type CarouselProps = {
-  photos: StaticImageData[];
-  projects: IProjects[];
-  logos: string[][];
+  data: IProjects[];
 };
 
 type CardCarouselProps = {
@@ -27,7 +24,8 @@ type CardCarouselProps = {
   id: string | number;
 };
 
-function Carousel({ photos, projects, logos }: CarouselProps) {
+function Carousel({ data }: CarouselProps) {
+  const projects = data;
   const [_, setInit] = useState(false);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -69,15 +67,15 @@ function Carousel({ photos, projects, logos }: CarouselProps) {
         }}
         onInit={() => setInit(true)}
       >
-        {photos.map((el: any, i: number) => (
+        {projects.map((el: any, i: number) => (
           <SwiperSlide key={i}>
             <Cardcarousel
-              srcPhotos={el}
+              srcPhotos={el.photo_url}
               i={i}
-              Logos={logos[i]}
-              titel={projects[i].name}
+              Logos={el.logourld}
+              titel={el.name}
               key={i}
-              id={projects[i].id}
+              id={el.id}
             />
           </SwiperSlide>
         ))}

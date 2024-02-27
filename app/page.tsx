@@ -7,7 +7,7 @@ import CardWrapper from "./ui/components/Wrappercarousel";
 export default function Home() {
   return (
     <div
-      className="container flex flex-col justify-start items-start gap-4 md:gap-6 overflow-y-scroll pb-8 md:pb-16"
+      className="container flex flex-col justify-start items-start gap-4 md:gap-6 overflow-y-scroll pb-8 md:pb-16 mb-14"
       style={{ scrollbarWidth: "none" }}
     >
       <div className="flex flex-col gap-3">
