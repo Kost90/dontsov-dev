@@ -9,7 +9,7 @@ function Typewritter() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowSecondAnimation(true);
-    }, 2500);
+    }, 5800);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -17,7 +17,7 @@ function Typewritter() {
   return (
     <>
       <TypeAnimation
-        sequence={[`Simply said,\n I love design and code.`, 1000]}
+        sequence={[`Hello, my name is Kostiantyn`,500,`Simply said,\n I love design and code.`, 1000]}
         wrapper="h1"
         speed={50}
         repeat={0}

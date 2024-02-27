@@ -6,4 +6,7 @@
 }
 .div_hover:hover img {
   @apply -translate-y-3/4 transition-transform duration-1000;
+}
+.div_hover:hover a {
+  @apply opacity-100 duration-1000;
 }/*# sourceMappingURL=Cards.module.css.map */

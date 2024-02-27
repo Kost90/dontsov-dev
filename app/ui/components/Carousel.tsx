@@ -1,27 +1,33 @@
 "use client";
+import { useRef, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { StaticImageData } from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { IProjects } from "@/app/lib/definitions";
+import styles from "./styles/Cards.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Navigation } from "swiper/modules";
 import "./styles.css";
-import { useRef, useState } from "react";
-import React from "react";
-import styles from "./styles/Cards.module.css";
 
-// Пересмотреть везде типы и добавить в карточку линк на динамическую страничку.
+type CarouselProps = {
+  photos: StaticImageData[];
+  projects: IProjects[];
+  logos: string[][];
+};
 
-function Carousel({
-  photos,
-  projects,
-  logos,
-}: {
-  photos: any;
-  projects: any;
-  logos: any;
-}) {
+type CardCarouselProps = {
+  srcPhotos: string;
+  Logos: string[];
+  titel: string;
+  i: number;
+  id: string | number;
+};
+
+function Carousel({ photos, projects, logos }: CarouselProps) {
   const [_, setInit] = useState(false);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -29,7 +35,7 @@ function Carousel({
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 7.5, duration: 0.5 }}
+      transition={{ delay: 9.5, duration: 0.5 }}
       className="h-[358px] w-full mb-5"
     >
       <div className="flex items-center gap-2 justify-end">
@@ -65,12 +71,13 @@ function Carousel({
       >
         {photos.map((el: any, i: number) => (
           <SwiperSlide key={i}>
-            <Card
+            <Cardcarousel
               srcPhotos={el}
               i={i}
               Logos={logos[i]}
               titel={projects[i].name}
               key={i}
+              id={projects[i].id}
             />
           </SwiperSlide>
         ))}
@@ -79,17 +86,13 @@ function Carousel({
   );
 }
 
-export function Card({
+export function Cardcarousel({
   srcPhotos,
   Logos,
   titel,
   i,
-}: {
-  srcPhotos: string;
-  Logos: string[];
-  titel: string;
-  i: number;
-}) {
+  id,
+}: CardCarouselProps) {
   return (
     <>
       <div className="hover:bg-black !h-full w-full cursor-pointer" key={i}>
@@ -103,7 +106,13 @@ export function Card({
         <h2 className="!text-slate-300 font-bold text-xl transform -translate-y-full uppercase">
           {titel}
         </h2>
-        <div className="border border-slate-400 w-3/4 rounded-full"></div>
+        <Link
+          href={`/works/${id}`}
+          className="hover:text-white hover:scale-150 duration-500 opacity-0"
+        >
+          View project details
+        </Link>
+        <div className="border border-slate-400 w-3/4 rounded-full">Lin</div>
         <div className="flex justify-center mt-2 transform translate-y-full">
           {Logos.map((el, i) => (
             <div key={i} className="mr-2">

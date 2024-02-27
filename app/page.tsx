@@ -2,7 +2,7 @@ import { LogosArr } from "./lib/Svg";
 import Typewritter from "./ui/components/Typewritter";
 import Paragraphs from "./ui/components/Paragraphs";
 import Logoslist from "./ui/components/Logoslist";
-import CardWrapper from "./ui/components/Cards";
+import CardWrapper from "./ui/components/Wrappercarousel";
 
 export default function Home() {
   return (

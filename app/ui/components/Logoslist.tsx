@@ -12,9 +12,9 @@ type LogosProps = {
 function Logoslist({ src, alt, key, i }: LogosProps) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 6.5, duration: 0.3 * i }}
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ delay: 9, duration: 0.3 * i }}
     >
       <Image
         src={src}

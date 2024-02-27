@@ -3,7 +3,6 @@ import { unstable_noStore as noStore } from "next/cache";
 import { IProjects } from "./definitions";
 import { filterPhoto, filterTechLogosArray } from "./utils";
 
-
 export async function fetchProjects() {
   noStore();
 
@@ -16,3 +15,15 @@ export async function fetchProjects() {
   }
 }
 
+export async function fetchProjectbyId(id: string) {
+  noStore();
+
+  try {
+    const data =
+      await sql<IProjects>`SELECT * FROM project WHERE project.id = ${id}`;
+    return data.rows;
+  } catch (error) {
+    console.error("Database Error:", error);
+    throw new Error("Failed to fetch project.");
+  }
+}

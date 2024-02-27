@@ -15,9 +15,12 @@ import TailwindLogo from "../../public/svg/tailwind-css-2.svg";
 import TSLogo from "../../public/svg/ts-logo-round-256.svg";
 import { SvglogoEnum } from "@/app/lib/definitions";
 
+type ILogosArr = {
+  name:SvglogoEnum,
+  src:string,
+}
 
-
-export const LogosArr = [
+export const LogosArr:ILogosArr[] = [
   { name: SvglogoEnum.css, src: CSSLogo },
   { name: SvglogoEnum.html, src: HTMLLogo },
   { name: SvglogoEnum.js, src: JSLogo },

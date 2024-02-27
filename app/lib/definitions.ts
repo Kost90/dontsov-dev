@@ -1,5 +1,5 @@
 export type IProjects = {
-  id: number;
+  id: string|number;
   name: string;
   discription: string;
   photo_url: string;
