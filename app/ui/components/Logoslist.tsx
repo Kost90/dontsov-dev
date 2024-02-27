@@ -7,14 +7,15 @@ type LogosProps = {
   alt: string;
   key: number;
   i: number;
+  delay:number;
 };
 
-function Logoslist({ src, alt, key, i }: LogosProps) {
+function Logoslist({ src, alt, key, i, delay }: LogosProps) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ delay: 9, duration: 0.3 * i }}
+      transition={{ delay: delay, duration: 0.3 * i }}
     >
       <Image
         src={src}

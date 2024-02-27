@@ -1,7 +1,7 @@
 import { sql } from "@vercel/postgres";
 import { unstable_noStore as noStore } from "next/cache";
 import { IProjects } from "./definitions";
-import { filterPhoto, filterTechLogosArray } from "./utils";
+// import { filterPhoto, filterTechLogosArray } from "./utils";
 
 export async function fetchProjects() {
   noStore();

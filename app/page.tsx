@@ -13,11 +13,24 @@ export default function Home() {
       <div className="flex flex-col gap-3">
         <Typewritter />
       </div>
-      <Paragraphs />
+      <Paragraphs
+        text="I'm Junior Full stack developer with 1 year of professional experience in building web applications using"
+        span={" React."}
+        delay={7.5}
+      />
+      <Paragraphs
+        text="I'm Focused on clean, modular, and efficient code that easy toextend and support."
+        delay={8}
+      />
+      <Paragraphs
+        text=" My technology stack is:"
+        delay={8.5}
+        Classname="text-black font-semibold"
+      />
       <div className="flex flex-col gap-2">
         <div className="flex items-center gap-2 flex-wrap justify-center">
           {LogosArr.map((el, i) => (
-            <Logoslist src={el.src} alt={`logo${i}`} key={i} i={i} />
+            <Logoslist src={el.src} alt={`logo${i}`} key={i} i={i} delay={9}/>
           ))}
         </div>
       </div>

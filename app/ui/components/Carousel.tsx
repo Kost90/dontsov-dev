@@ -99,7 +99,7 @@ export function Cardcarousel({
         <Image
           src={srcPhotos}
           alt={`${i}`}
-          className="object-cover w-full h-full hover:opacity-0 duration-500"
+          className="w-full h-full hover:opacity-0 duration-500"
         />
       </div>
       <div className={styles.div_hover}>
@@ -112,7 +112,7 @@ export function Cardcarousel({
         >
           View project details
         </Link>
-        <div className="border border-slate-400 w-3/4 rounded-full">Lin</div>
+        <div className="border border-slate-400 w-3/4 rounded-full"></div>
         <div className="flex justify-center mt-2 transform translate-y-full">
           {Logos.map((el, i) => (
             <div key={i} className="mr-2">

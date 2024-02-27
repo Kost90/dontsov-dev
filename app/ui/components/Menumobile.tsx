@@ -1,5 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import GitHubIcon from "@/public/svg/github-mark.svg";
+import LinkedinIcon from "@/public/svg/linkedin-svgrepo-com.svg";
 
 type isOpen = {
   isOpen: boolean;
@@ -43,6 +46,34 @@ function Menumobile({ isOpen, onClick }: isOpen) {
       <Link href={"/contact"} onClick={onClick}>
         Contact
       </Link>
+      <div className="flex flex-row items-center justify-center gap-1">
+        <a
+          href="https://github.com/Kost90?tab=repositories"
+          target="blanc"
+          className="block"
+        >
+          <Image
+            src={GitHubIcon}
+            alt="git_hub_icon"
+            width={20}
+            height={20}
+            className="hover:scale-150 duration-500"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/kostiantyn-dontsov-ba1a09249/"
+          target="blanc"
+          className="block"
+        >
+          <Image
+            src={LinkedinIcon}
+            alt="linkedin_icon"
+            width={20}
+            height={20}
+            className="hover:scale-150 duration-500"
+          />
+        </a>
+      </div>
     </motion.div>
   );
 }
