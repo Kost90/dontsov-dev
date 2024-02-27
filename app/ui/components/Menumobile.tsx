@@ -13,7 +13,7 @@ function Menumobile({ isOpen, onClick }: isOpen) {
   const MenuVariants = {
     hidden: {
       opacity: 0,
-      y: "-100%",
+      y: "-80%",
     },
     visible: {
       opacity: 1,
@@ -22,7 +22,7 @@ function Menumobile({ isOpen, onClick }: isOpen) {
     },
     exit: {
       opacity: 0,
-      y: "-100%",
+      y: "-80%",
       transition: { duration: 0.5 },
     },
   };
