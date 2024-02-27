@@ -52,12 +52,13 @@ function Cardswrapper({ data }: Props) {
         ))}
       </div>
       <div className="flex flex-wrap justify-center items-center gap-7">
-        {works.map((el) => (
+        {works.map((el,i) => (
           <Cards
             id={el.id}
             name={el.name}
             logourld={el.logourld}
             photo_url={el.photo_url}
+            key={i}
           />
         ))}
       </div>
