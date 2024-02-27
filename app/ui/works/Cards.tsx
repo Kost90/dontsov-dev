@@ -25,11 +25,11 @@ function Cardswrapper({ data }: Props) {
   const projects = data;
   const [isType, setIsType] = useState<string>("all");
   const [works, setWorks] = useState<IProjects[]>(projects);
-  const [active,setActive] = useState('all')
+  const [active, setActive] = useState("all");
 
-  const handelChangeType = (arg: string,type:string): void => {
+  const handelChangeType = (arg: string, type: string): void => {
     setIsType(arg);
-    setActive(type)
+    setActive(type);
   };
 
   useEffect(() => {
@@ -49,13 +49,13 @@ function Cardswrapper({ data }: Props) {
             type={el}
             active={active}
             index={i}
-            onClick={() => handelChangeType(el,el)}
+            onClick={() => handelChangeType(el, el)}
             key={i}
           />
         ))}
       </div>
       <div className="flex flex-wrap justify-center items-center gap-7">
-        {works.map((el,i) => (
+        {works.map((el, i) => (
           <Cards
             id={el.id}
             name={el.name}
