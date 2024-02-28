@@ -6,13 +6,14 @@ type Props = {
   delay: number;
   span?: string;
   Classname?: string;
+  position:number,
 };
 
-function Paragraphs({ delay, text, span, Classname }: Props) {
+function Paragraphs({ delay, text, span, Classname,position }: Props) {
   return (
     <>
       <motion.p
-        initial={{ opacity: 0, x: -20 }}
+        initial={{ opacity: 0, x: position }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: delay, duration: 0.5 }}
         className={`w-full md:w-[508px] text-justify ${Classname}`}

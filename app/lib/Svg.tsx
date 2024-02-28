@@ -37,3 +37,4 @@ export const LogosArr:ILogosArr[] = [
   { name: SvglogoEnum.tailwind, src: TailwindLogo },
   { name: SvglogoEnum.ts, src: TSLogo },
 ];
+

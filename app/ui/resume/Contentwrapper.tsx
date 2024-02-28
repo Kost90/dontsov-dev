@@ -3,6 +3,7 @@ import React from "react";
 import List from "./List";
 import Title from "../works/Title";
 import Paragraphs from "../components/Paragraphs";
+import Downloadbtn from "./Downloadbtn";
 import { motion } from "framer-motion";
 
 const resumeData = [
@@ -36,12 +37,13 @@ function Contentwrapper() {
     <>
       <div className="flex flex-row justify-between">
         <Title text="Resume" />
-        <motion.button
+        <Downloadbtn className="hidden md:flex"/>
+        {/* <motion.button
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
           type="button"
-          className="flex items-center justify-center p-1 md:p-2 bg-black rounded-md"
+          className="hidden md:flex items-center justify-center p-1 md:p-2 bg-black rounded-md"
         >
           <a
             href="/Kostiantyn_Dontsov_CV.pdf"
@@ -50,11 +52,12 @@ function Contentwrapper() {
           >
             Download CV
           </a>
-        </motion.button>
+        </motion.button> */}
       </div>
       <Paragraphs
         delay={0.5}
         text="A summary of my education, work history, credentials, and other accomplishments and skills"
+        position={20}
         Classname="mb-10 mt-10"
       />
       <div className="flex flex-col gap-5"></div>
@@ -68,6 +71,7 @@ function Contentwrapper() {
           delay={1.5 - 0.5 + i}
         />
       ))}
+      <Downloadbtn className="flex md:hidden"/>
     </>
   );
 }

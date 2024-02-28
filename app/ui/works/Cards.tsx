@@ -6,6 +6,7 @@ import Link from "next/link";
 import { IProjects, EnumType } from "@/app/lib/definitions";
 import FilterTabs from "./FilterTabs";
 import { filterphotoTabs } from "@/app/lib/utils";
+import Selects from "./Selects";
 import styles from "./styles/Styles.module.css";
 
 type Props = {
@@ -53,6 +54,7 @@ function Cardswrapper({ data }: Props) {
             key={i}
           />
         ))}
+        <Selects onClick={handelChangeType}/>
       </div>
       <div className="flex flex-wrap justify-center items-center gap-7">
         {works.map((el, i) => (
