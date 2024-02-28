@@ -1,10 +1,9 @@
-"use client";
+
 import React from "react";
 import List from "./List";
 import Title from "../works/Title";
 import Paragraphs from "../components/Paragraphs";
 import Downloadbtn from "./Downloadbtn";
-import { motion } from "framer-motion";
 
 const resumeData = [
   {
@@ -37,22 +36,7 @@ function Contentwrapper() {
     <>
       <div className="flex flex-row justify-between">
         <Title text="Resume" />
-        <Downloadbtn className="hidden md:flex"/>
-        {/* <motion.button
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          type="button"
-          className="hidden md:flex items-center justify-center p-1 md:p-2 bg-black rounded-md"
-        >
-          <a
-            href="/Kostiantyn_Dontsov_CV.pdf"
-            download
-            className="text-white font-semibold hover:text-bronze duration-500"
-          >
-            Download CV
-          </a>
-        </motion.button> */}
+        <Downloadbtn className="hidden md:flex" />
       </div>
       <Paragraphs
         delay={0.5}
@@ -71,7 +55,7 @@ function Contentwrapper() {
           delay={1.5 - 0.5 + i}
         />
       ))}
-      <Downloadbtn className="flex md:hidden"/>
+      <Downloadbtn className="flex md:hidden" />
     </>
   );
 }
