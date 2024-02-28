@@ -22,9 +22,7 @@ function FilterTabs({ type, index, active, onClick }: Props) {
           {
             "border-b-2 border-b-black text-black font-semibold":
               active === type,
-          },
-          { "text-slate-400": active !== type },
-          {
+            "text-slate-400": active !== type,
             "border-b-2 border-b-bronze text-bronze font-semibold":
               active === type && theme === "dark",
           }
