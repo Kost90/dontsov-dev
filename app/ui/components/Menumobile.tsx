@@ -20,12 +20,12 @@ function Menumobile({ isOpen, onClick }: isOpen) {
   const MenuVariants = {
     hidden: {
       opacity: 0,
-      y: "-80%",
+      y: "-90%",
     },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5 },
+      transition: { duration: 0.7 },
     },
     exit: {
       opacity: 0,
