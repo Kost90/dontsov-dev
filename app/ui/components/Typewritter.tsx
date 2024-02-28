@@ -23,7 +23,7 @@ function Typewritter() {
         repeat={0}
         style={{ whiteSpace: "pre-line", height: "112px", display: "block" }}
         cursor={false}
-        className={`${archivo.className} !font-extrabold leading-[42px] md:leading-[56px]`}
+        className={`${archivo.className} !font-extrabold leading-[42px] md:leading-[56px] lg:text-6xl`}
       />
       {showSecondAnimation && (
         <TypeAnimation

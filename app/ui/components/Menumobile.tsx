@@ -40,8 +40,10 @@ function Menumobile({ isOpen, onClick }: isOpen) {
       animate={isOpen ? "visible" : "exit"}
       variants={MenuVariants}
       className={clsx(
-        "flex md:hidden justify-center items-center gap-3 absolute top-0 z-[4] h-screen w-full flex-col left-0 bg-white",
-        { "!bg-black": theme === "dark" }
+        "flex md:hidden justify-center items-center gap-3 absolute top-0 z-[4] h-screen w-full flex-col left-0 font-semibold",
+        { "bg-black": theme === "dark",
+          "bg-white":theme !== "dark",
+      }
       )}
     >
       <Link href={"/"} onClick={onClick}>

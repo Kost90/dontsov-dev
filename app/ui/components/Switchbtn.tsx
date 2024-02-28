@@ -16,18 +16,18 @@ function Switchbtn() {
           >
             <SunIcon />
           </button>
-          <p className="text-[12px] text-white">Switch to light</p>
+          <p className="text-[12px] text-white md:text-base">Switch to light</p>
         </div>
       ) : (
         <div className="flex flex-row items-center gap-2">
           <button
             type="button"
             onClick={() => setTheme("dark")}
-            className="w-5 h-5"
+            className="w-5"
           >
             <MoonIcon />
           </button>
-          <p className="text-[12px] text-black">Switch to dark</p>
+          <p className="text-[12px] text-black md:text-base">Switch to dark</p>
         </div>
       )}
     </>

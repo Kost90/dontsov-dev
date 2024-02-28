@@ -3,7 +3,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Switchbtn from "./Switchbtn";
-import React from "react";
+import { spaceGrotesk } from "../fonts";
 
 const links = [
   {
@@ -33,7 +33,10 @@ function Sidebar() {
           <Link
             href={el.href}
             key={el.name}
-            className={clsx({ "font-bold text-bronze": el.href === pathname })}
+            className={clsx(`font-bold`, {
+              "text-bronze md:text-2xl lg:text-3xl": el.href === pathname,
+              "md:text-md": el.href !== pathname,
+            })}
           >
             {el.name}
           </Link>

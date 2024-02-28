@@ -7,6 +7,7 @@ import { Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { IProjects } from "@/app/lib/definitions";
+import { archivo, spaceGrotesk } from "../fonts";
 import styles from "./styles/Cards.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -101,12 +102,12 @@ export function Cardcarousel({
         />
       </div>
       <div className={styles.div_hover}>
-        <h2 className="!text-slate-300 font-bold text-xl transform -translate-y-full uppercase">
+        <h2 className={`!text-slate-300 font-bold text-2xl transform -translate-y-full uppercase ${archivo.className}`}>
           {titel}
         </h2>
         <Link
           href={`/works/${id}`}
-          className="hover:text-white hover:scale-150 duration-500 opacity-0"
+          className={`hover:text-white hover:scale-150 duration-500 opacity-0 ${spaceGrotesk.className}`}
         >
           View project details
         </Link>

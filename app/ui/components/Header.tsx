@@ -21,7 +21,7 @@ function Header() {
   return (
     <header className="flex items-center justify-between p-3 md:p-6 relative">
       <div>
-        <h2 className={`${archivo.className} !font-bold relative z-10 text-lg`}>
+        <h2 className={`${archivo.className} !font-bold relative z-10 lg:text-4xl md:text-3xl text-xl`}>
           KDontsov.
         </h2>
       </div>
