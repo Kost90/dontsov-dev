@@ -20,7 +20,7 @@ function Menumobile({ isOpen, onClick }: isOpen) {
   const MenuVariants = {
     hidden: {
       opacity: 0,
-      y: "-100%",
+      y: "-90%",
     },
     visible: {
       opacity: 1,
@@ -29,7 +29,7 @@ function Menumobile({ isOpen, onClick }: isOpen) {
     },
     exit: {
       opacity: 0,
-      y: "-80%",
+      y: "-90%",
       transition: { duration: 0.5 },
     },
   };
@@ -41,8 +41,7 @@ function Menumobile({ isOpen, onClick }: isOpen) {
       variants={MenuVariants}
       className={clsx(
         "flex md:hidden justify-center items-center gap-3 absolute top-0 z-[4] h-screen w-full flex-col left-0 bg-white",
-        { "bg-white": theme === "light" },
-        { "bg-black": theme === "dark" }
+        { "!bg-black": theme === "dark" }
       )}
     >
       <Link href={"/"} onClick={onClick}>
