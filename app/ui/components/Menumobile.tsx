@@ -1,8 +1,14 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import GitHubIcon from "@/public/svg/github-mark.svg";
+import GitHubWhite from "@/public/svg/github-mark-white.svg";
 import LinkedinIcon from "@/public/svg/linkedin-svgrepo-com.svg";
+import LinkedinWhiteIcon from "@/public/svg/linkedin-white-icon.svg";
+import Switchbtn from "./Switchbtn";
+import { useTheme } from "next-themes";
+import clsx from "clsx";
 
 type isOpen = {
   isOpen: boolean;
@@ -10,6 +16,7 @@ type isOpen = {
 };
 
 function Menumobile({ isOpen, onClick }: isOpen) {
+  const { theme, setTheme } = useTheme();
   const MenuVariants = {
     hidden: {
       opacity: 0,
@@ -32,7 +39,11 @@ function Menumobile({ isOpen, onClick }: isOpen) {
       initial={"hidden"}
       animate={isOpen ? "visible" : "exit"}
       variants={MenuVariants}
-      className="flex md:hidden justify-center items-center gap-3 absolute top-0 z-[4] h-screen w-full flex-col bg-bgLight left-0"
+      className={clsx(
+        "flex md:hidden justify-center items-center gap-3 absolute top-0 z-[4] h-screen w-full flex-col left-0",
+        { "bg-bgLight": theme === "light" },
+        { "bg-black": theme === "dark" }
+      )}
     >
       <Link href={"/"} onClick={onClick}>
         About
@@ -53,11 +64,13 @@ function Menumobile({ isOpen, onClick }: isOpen) {
           className="block"
         >
           <Image
-            src={GitHubIcon}
+            src={theme === "dark" ? GitHubWhite : GitHubIcon}
             alt="git_hub_icon"
             width={20}
             height={20}
-            className="hover:scale-150 duration-500"
+            className={clsx("hover:scale-150 duration-500", {
+              "!fill-white": theme === "dark",
+            })}
           />
         </a>
         <a
@@ -66,14 +79,17 @@ function Menumobile({ isOpen, onClick }: isOpen) {
           className="block"
         >
           <Image
-            src={LinkedinIcon}
+            src={theme === "dark" ? LinkedinWhiteIcon : LinkedinIcon}
             alt="linkedin_icon"
             width={20}
             height={20}
-            className="hover:scale-150 duration-500"
+            className={clsx("hover:scale-150 duration-500", {
+              "!fill-white": theme === "dark",
+            })}
           />
         </a>
       </div>
+      <Switchbtn />
     </motion.div>
   );
 }

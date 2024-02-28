@@ -25,7 +25,8 @@ export default function Home() {
         position={20}
       />
       <Paragraphs
-        text=" My technology stack is:"
+        text=""
+        span="My technology stack is:"
         delay={8.5}
         position={0}
         Classname="text-black font-semibold"

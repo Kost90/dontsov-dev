@@ -2,14 +2,19 @@
 import { useCallback, useState } from "react";
 import Image from "next/image";
 import GitHubIcon from "@/public/svg/github-mark.svg";
+import GitHubWhite from "@/public/svg/github-mark-white.svg";
 import LinkedinIcon from "@/public/svg/linkedin-svgrepo-com.svg";
+import LinkedinWhiteIcon from "@/public/svg/linkedin-white-icon.svg";
 import { Button } from "./Button";
 import { archivo } from "../fonts";
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Menumobile from "./Menumobile";
+import { useTheme } from "next-themes";
+import clsx from "clsx";
 
 function Header() {
   const [isOpen, setIsopne] = useState<boolean>(false);
+  const { theme, setTheme } = useTheme();
   const handelChange = useCallback(() => {
     setIsopne(!isOpen);
   }, [isOpen]);
@@ -27,7 +32,7 @@ function Header() {
           className="md:block hidden"
         >
           <Image
-            src={GitHubIcon}
+            src={theme === "dark" ? GitHubWhite : GitHubIcon}
             alt="git_hub_icon"
             width={40}
             height={40}
@@ -40,7 +45,7 @@ function Header() {
           className="md:block hidden"
         >
           <Image
-            src={LinkedinIcon}
+            src={theme === "dark" ? LinkedinWhiteIcon : LinkedinIcon}
             alt="linkedin_icon"
             width={40}
             height={40}
@@ -54,7 +59,11 @@ function Header() {
         onClick={handelChange}
       >
         {isOpen ? (
-          <XMarkIcon className="w-8 h-8 z-[5] !text-black" />
+          <XMarkIcon
+            className={clsx("w-8 h-8 z-[5] !text-black", {
+              "!text-white": theme === "dark",
+            })}
+          />
         ) : (
           <Bars2Icon className="w-8 h-8 z-[5]" />
         )}

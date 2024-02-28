@@ -1,5 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
+import { useTheme } from "next-themes";
+import clsx from "clsx";
 
 type Props = {
   text: string;
@@ -10,16 +12,17 @@ type Props = {
 };
 
 function Paragraphs({ delay, text, span, Classname,position }: Props) {
+  const { theme, setTheme } = useTheme();
   return (
     <>
       <motion.p
         initial={{ opacity: 0, x: position }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: delay, duration: 0.5 }}
-        className={`w-full md:w-[508px] text-justify ${Classname}`}
+        className={clsx(`w-full md:w-[508px] text-justify ${Classname}`)}
       >
         {text}
-        <span className="text-bronze font-semibold">{span}</span>
+        <span className={clsx("text-bronze font-semibold",{})}>{span}</span>
       </motion.p>
     </>
   );

@@ -3,21 +3,23 @@ import React, { useRef } from "react";
 import { spaceGrotesk } from "../fonts";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { useTheme } from "next-themes";
+import clsx from "clsx";
 
 function Form() {
+  const { theme, setTheme } = useTheme();
   const form = useRef(null);
   const submit = (e: any) => {
     e.preventDefault();
     const currentForm = form.current as unknown as HTMLFormElement;
     form.current &&
-      emailjs
-        .sendForm(
-          "portfolio",
-          "contact_form",
-          form.current,
-          `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
-        )
-        currentForm && currentForm.reset();
+      emailjs.sendForm(
+        "portfolio",
+        "contact_form",
+        form.current,
+        `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
+      );
+    currentForm && currentForm.reset();
   };
   return (
     <motion.form
@@ -39,7 +41,10 @@ function Form() {
           type="text"
           name="name"
           placeholder="Name"
-          className="flex items-center p-4 bg-[#F1ECE6] text-black focus:!border-2 focus:!border-bronze md:w-[400px] w-full outline-none"
+          className={clsx(
+            "flex items-center p-4 bg-[#F1ECE6] text-black focus:!border-2 focus:!border-bronze md:w-[400px] w-full outline-none",
+            { "bg-slate-600": theme === "dark" }
+          )}
         />
       </div>
       <div className="w-full">
@@ -53,7 +58,10 @@ function Form() {
           type="email"
           name="email"
           placeholder="Email"
-          className="flex items-center p-4 bg-[#F1ECE6] text-black focus:!border-2 focus:!border-bronze md:w-[400px] w-full outline-none"
+          className={clsx(
+            "flex items-center p-4 bg-[#F1ECE6] text-black focus:!border-2 focus:!border-bronze md:w-[400px] w-full outline-none",
+            { "bg-slate-600": theme === "dark" }
+          )}
         />
       </div>
       <div className="w-full">
@@ -67,12 +75,18 @@ function Form() {
           name="message"
           id="message"
           placeholder="Message"
-          className="flex items-center p-4 bg-[#F1ECE6] text-black focus:!border-2 focus:!border-bronze md:w-[400px] w-full h-[240px] resize-none outline-none"
+          className={clsx(
+            "flex items-center p-4 bg-[#F1ECE6] text-black focus:!border-2 focus:!border-bronze md:w-[400px] w-full h-[240px] resize-none outline-none",
+            { "bg-slate-600": theme === "dark" }
+          )}
         ></textarea>
       </div>
       <button
         type="submit"
-        className="flex justify-center items-center w-full md:w-40 pt-4 pb-4 pl-2 pr-2 !font-semibold bg-black text-white hover:text-bronze duration-500"
+        className={clsx(
+          "flex justify-center items-center w-full md:w-40 pt-4 pb-4 pl-2 pr-2 !font-semibold bg-black text-white hover:text-bronze duration-500",
+          { "bg-white !text-black": theme === "dark" }
+        )}
       >
         Send
       </button>
