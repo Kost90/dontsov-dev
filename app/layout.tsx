@@ -25,7 +25,7 @@ export default function RootLayout({
         >
           <ThemeProvider>
           <Header />
-          <main className="flex w-full px-6 pt-[40px] pb-[40px] md:h-screen">
+          <main className="flex w-full px-6 pt-[40px] pb-4 md:pb-[40px] md:h-screen">
             <Sidebar />
             {children}
           </main>

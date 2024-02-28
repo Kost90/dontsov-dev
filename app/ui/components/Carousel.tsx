@@ -35,7 +35,7 @@ function Carousel({ data }: CarouselProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 9.5, duration: 0.5 }}
-      className="h-[358px] w-full mb-5"
+      className="h-[358px] w-full mb-2"
     >
       <div className="flex items-center gap-2 justify-end">
         <button
@@ -94,11 +94,11 @@ export function Cardcarousel({
 }: CardCarouselProps) {
   return (
     <>
-      <div className="hover:bg-black !h-full w-full cursor-pointer" key={i}>
+      <div className="hover:bg-black w-full h-60 md:h-full cursor-pointer" key={i}>
         <Image
           src={srcPhotos}
           alt={`${i}`}
-          className="w-full h-full hover:opacity-0 duration-500"
+          className="hover:opacity-0 duration-500 object-cover"
         />
       </div>
       <div className={styles.div_hover}>
