@@ -54,7 +54,7 @@ function Cardswrapper({ data }: Props) {
             key={i}
           />
         ))}
-        <Selects onClick={handelChangeType}/>
+        <Selects onClick={handelChangeType} />
       </div>
       <div className="flex flex-wrap justify-center items-center gap-7">
         {works.map((el, i) => (

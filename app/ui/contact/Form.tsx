@@ -1,12 +1,12 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { spaceGrotesk } from "../fonts";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { useTheme } from "next-themes";
 import clsx from "clsx";
 
-function Form() {
+function Form({ onChange }: { onChange: () => void }) {
   const { theme, setTheme } = useTheme();
   const form = useRef(null);
   const submit = (e: any) => {
@@ -20,6 +20,7 @@ function Form() {
         `${process.env.NEXT_PUBLIC_PUBLIC_KEY}`
       );
     currentForm && currentForm.reset();
+    onChange();
   };
   return (
     <motion.form
@@ -41,6 +42,9 @@ function Form() {
           type="text"
           name="name"
           placeholder="Name"
+          min={3}
+          max={50}
+          required
           className={clsx(
             "flex items-center p-4 bg-[#F1ECE6] text-black focus:!border-2 focus:!border-bronze md:w-[400px] w-full outline-none",
             { "bg-slate-600": theme === "dark" }
@@ -58,6 +62,9 @@ function Form() {
           type="email"
           name="email"
           placeholder="Email"
+          min={3}
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          required
           className={clsx(
             "flex items-center p-4 bg-[#F1ECE6] text-black focus:!border-2 focus:!border-bronze md:w-[400px] w-full outline-none",
             { "bg-slate-600": theme === "dark" }
@@ -75,6 +82,8 @@ function Form() {
           name="message"
           id="message"
           placeholder="Message"
+          required
+          minLength={3}
           className={clsx(
             "flex items-center p-4 bg-[#F1ECE6] text-black focus:!border-2 focus:!border-bronze md:w-[400px] w-full h-[240px] resize-none outline-none",
             { "bg-slate-600": theme === "dark" }
