@@ -94,15 +94,21 @@ export function Cardcarousel({
 }: CardCarouselProps) {
   return (
     <>
-      <div className="hover:bg-black w-full h-60 md:h-full cursor-pointer" key={i}>
+      <div
+        className="hover:bg-black w-full h-60 md:h-full cursor-pointer"
+        key={i}
+      >
         <Image
+          layout="responsive"
           src={srcPhotos}
           alt={`${i}`}
-          className="hover:opacity-0 duration-500 object-cover"
+          className="hover:opacity-0 duration-500 w-full !h-full !object-fill md:object-cover"
         />
       </div>
       <div className={styles.div_hover}>
-        <h2 className={`!text-slate-300 font-bold text-2xl transform -translate-y-full uppercase ${archivo.className}`}>
+        <h2
+          className={`!text-slate-300 font-bold text-2xl transform -translate-y-full uppercase ${archivo.className}`}
+        >
           {titel}
         </h2>
         <Link
