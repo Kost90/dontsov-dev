@@ -35,7 +35,7 @@ function Carousel({ data }: CarouselProps) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 9.5, duration: 0.5 }}
-      className="h-[358px] w-full mb-2"
+      className="md:h-[358px] w-full mb-2"
     >
       <div className="flex items-center gap-2 justify-end">
         <button
