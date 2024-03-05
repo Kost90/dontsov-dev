@@ -94,10 +94,7 @@ export function Cardcarousel({
 }: CardCarouselProps) {
   return (
     <>
-      <div
-        className="hover:bg-black w-full h-full cursor-pointer"
-        key={i}
-      >
+      <div className="hover:bg-black w-full h-full cursor-pointer" key={i}>
         <Image
           layout="responsive"
           src={srcPhotos}
