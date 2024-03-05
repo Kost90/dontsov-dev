@@ -37,7 +37,7 @@ function Carousel({ data }: CarouselProps) {
       transition={{ delay: 9.5, duration: 0.5 }}
       className="md:h-[358px] w-full mb-2"
     >
-      <div className="flex items-center gap-2 justify-end">
+      <div className="flex items-center gap-2 justify-end mb-3">
         <button
           type="button"
           className="swiper-button-prev hover:text-slate-500 disabled:text-slate-400"
@@ -95,7 +95,7 @@ export function Cardcarousel({
   return (
     <>
       <div
-        className="hover:bg-black w-full h-60 md:h-full cursor-pointer"
+        className="hover:bg-black w-full h-full cursor-pointer"
         key={i}
       >
         <Image
