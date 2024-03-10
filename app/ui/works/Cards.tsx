@@ -91,6 +91,8 @@ function Cards({
         <Image
           src={photo_url}
           alt={`${id}`}
+          width={500}
+          height={500}
           className="w-full h-full hover:opacity-0 duration-500"
         />
       </div>

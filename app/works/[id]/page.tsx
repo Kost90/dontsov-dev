@@ -1,6 +1,5 @@
 import { fetchProjectbyId } from "@/app/lib/data";
 import Paragraphs from "@/app/ui/components/Paragraphs";
-import { filterArray } from "@/app/lib/utils";
 import Logoslist from "@/app/ui/components/Logoslist";
 import Imagecontainer from "@/app/ui/works/Imagecontainer";
 import Title from "@/app/ui/works/Title";
@@ -8,8 +7,7 @@ import Buttonswrapper from "@/app/ui/works/Buttonswrapper";
 
 async function page({ params }: { params: { id: string } }) {
   const id = params.id;
-  const data = await fetchProjectbyId(id);
-  const projects = filterArray(data);
+  const projects = await fetchProjectbyId(id);
 
   return (
     <div
@@ -17,7 +15,7 @@ async function page({ params }: { params: { id: string } }) {
       style={{ scrollbarWidth: "none" }}
     >
       <Title text={projects[0].name} />
-      <Paragraphs text={projects[0].description} delay={0.5} position={20}/>
+      <Paragraphs text={projects[0].description} delay={0.5} position={20} />
       <div className="flex flex-row items-center gap-2">
         {projects[0].logourld.map((el, i) => (
           <Logoslist src={el} alt="svg_icon" key={i} i={i} delay={1.2} />

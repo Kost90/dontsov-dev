@@ -30,6 +30,7 @@ function Carousel({ data }: CarouselProps) {
   const [_, setInit] = useState(false);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  console.log(projects);
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -99,6 +100,8 @@ export function Cardcarousel({
           layout="responsive"
           src={srcPhotos}
           alt={`${i}`}
+          width={500}
+          height={500}
           className="hover:opacity-0 duration-500 w-full !h-full !object-fill md:object-cover"
         />
       </div>

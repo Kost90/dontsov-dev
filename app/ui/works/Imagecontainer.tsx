@@ -20,6 +20,8 @@ function Imagecontainer({
       <Image
         src={src}
         alt={alt}
+        width={500}
+        height={500}
         className="w-[600px] h-[320px] object-cover rounded-md mb-8"
       />
     </motion.div>
