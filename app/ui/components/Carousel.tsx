@@ -1,28 +1,17 @@
 "use client";
 import { useRef, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import { IProjects } from "@/app/lib/definitions";
-import { archivo, spaceGrotesk } from "../fonts";
-import styles from "./styles/Cards.module.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./styles.css";
+import { Cardcarousel } from "./Cardcarousel";
 
 type CarouselProps = {
   data: IProjects[];
-};
-
-type CardCarouselProps = {
-  srcPhotos: string;
-  Logos: string[];
-  titel: string;
-  i: number;
-  id: string | number;
 };
 
 function Carousel({ data }: CarouselProps) {
@@ -83,59 +72,6 @@ function Carousel({ data }: CarouselProps) {
         ))}
       </Swiper>
     </motion.div>
-  );
-}
-
-export function Cardcarousel({
-  srcPhotos,
-  Logos,
-  titel,
-  i,
-  id,
-}: CardCarouselProps) {
-  return (
-    <>
-      <div className="hover:bg-black w-full h-full cursor-pointer" key={i}>
-        <Image
-          layout="responsive"
-          placeholder="blur"
-          blurDataURL="/public/pictures/blur/blur.png"
-          objectFit="cover"
-          width={500}
-          height={100}
-          src={srcPhotos}
-          alt={`${i}`}
-          className="hover:opacity-0 duration-500 w-full !h-full !object-fill md:object-cover"
-        />
-      </div>
-      <div className={styles.div_hover}>
-        <h2
-          className={`!text-slate-300 font-bold text-2xl transform -translate-y-full uppercase ${archivo.className}`}
-        >
-          {titel}
-        </h2>
-        <Link
-          href={`/works/${id}`}
-          className={`hover:text-white hover:scale-150 duration-500 opacity-0 ${spaceGrotesk.className}`}
-        >
-          View project details
-        </Link>
-        <div className="border border-slate-400 w-3/4 rounded-full"></div>
-        <div className="flex justify-center mt-2 transform translate-y-full">
-          {Logos.map((el, i) => (
-            <div key={i} className="mr-2">
-              <Image
-                src={el}
-                alt={`logo-${i}`}
-                width={20}
-                height={20}
-                className="!w-8 !h-8 hover:scale-150 duration-500"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
   );
 }
 
