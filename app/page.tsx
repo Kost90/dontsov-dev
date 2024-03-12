@@ -20,7 +20,7 @@ export default function Home() {
         position={-20}
       />
       <Paragraphs
-        text="I'm Focused on clean, modular, and efficient code that easy toextend and support."
+        text="I'm Focused on clean, modular, and efficient code that easy to extend and support."
         delay={8}
         position={20}
       />
