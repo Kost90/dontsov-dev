@@ -1,5 +1,23 @@
 const projects = [
   {
+    id: 10,
+    name: "ETH Calculator",
+    description:
+      "Real time live React.js application, created with Vite.Data from Binance API receiving by WebSoket. For UI used shadcn/ui",
+    photoUrl:
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/eth-calculator.png",
+    projectCode: "https://github.com/Kost90/crypto-calculator",
+    projectUrl: "https://crypto-calculator-snowy.vercel.app/",
+    type: "react-app",
+    logoUrld: [
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
+    ],
+  },
+  {
     id: 1,
     name: "All plastic world",
     description:
