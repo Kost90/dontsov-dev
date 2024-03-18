@@ -3,11 +3,11 @@ const projects = [
     id: 10,
     name: "ETH Calculator",
     description:
-      "Real time live React.js application, created with Vite.Data from Binance API receiving by WebSoket. For UI used shadcn/ui",
+      "Real time full stack React.js/Node.js application, created with Vite. Data from Binance API receiving by Socket.io. For UI used shadcn/ui",
     photoUrl:
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/eth-calculator.png",
-    projectCode: "https://github.com/Kost90/crypto-calculator",
-    projectUrl: "https://crypto-calculator-snowy.vercel.app/",
+    projectCode: "https://github.com/Kost90/ETH-calculator-fullstack",
+    projectUrl: "https://eth-calculator-fullstack.vercel.app/",
     type: "react-app",
     logoUrld: [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
@@ -15,6 +15,7 @@ const projects = [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
     ],
   },
   {
