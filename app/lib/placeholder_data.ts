@@ -18,26 +18,26 @@ const projects = [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
     ],
   },
-  {
-    id: 1,
-    name: "All plastic world",
-    description:
-      "React.js SPA, created with Vite. Backend created with PostgreSQL and Sequelize ORM. Animations created with framer motion and 3D animation - created with React three fiber (three.js). CSS created with Tailwind CSS. Currently in progress.",
-    photoUrl:
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/allplasticworld.png",
-    projectCode: "https://github.com/Kost90/allplastic-world",
-    projectUrl: "https://allplastic-world-29d4.vercel.app/",
-    type: "react-app",
-    logoUrld: [
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/logo-javascript.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/postgresql.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
-    ],
-  },
+  // {
+  //   id: 1,
+  //   name: "All plastic world",
+  //   description:
+  //     "React.js SPA, created with Vite. Backend created with PostgreSQL and Sequelize ORM. Animations created with framer motion and 3D animation - created with React three fiber (three.js). CSS created with Tailwind CSS. Currently in progress.",
+  //   photoUrl:
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/allplasticworld.png",
+  //   projectCode: "https://github.com/Kost90/allplastic-world",
+  //   projectUrl: "https://allplastic-world-29d4.vercel.app/",
+  //   type: "react-app",
+  //   logoUrld: [
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/logo-javascript.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/postgresql.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
+  //   ],
+  // },
   {
     id: 2,
     name: "Aperture",
