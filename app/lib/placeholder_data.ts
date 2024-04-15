@@ -18,6 +18,23 @@ const projects = [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
     ],
   },
+  {
+    id: 10,
+    name: "Github Repo - Kanban Board",
+    description:
+      "React application, created with Vite. Data from Github API fetched with octokit. For UI used chakra ui. For dragable and droppable I used dnd.",
+    photoUrl:
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/kanban-board-repo-issues.png",
+    projectCode: "https://github.com/Kost90/kanban-board-git",
+    projectUrl: "https://kanban-board-git-issues.vercel.app/",
+    type: "react-app",
+    logoUrld: [
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
+    ],
+  },
   // {
   //   id: 1,
   //   name: "All plastic world",
