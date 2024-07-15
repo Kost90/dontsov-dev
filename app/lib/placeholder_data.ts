@@ -87,19 +87,18 @@ const projects = [
   },
   {
     id: 4,
-    name: "Hestiya BTI",
+    name: "UDocument",
     description:
-      "Full stack Next.js app with appointment Scheduling. Data saving in the MongoDB",
+      "Full stack Next.js app with server side actions.",
     photoUrl:
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/hestiya-bti.png",
-    projectCode: "https://github.com/Kost90/BTI",
-    projectUrl: "https://hestiyabti.com/",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/udocument.png",
+    projectCode: "https://github.com/Kost90/udocuments",
+    projectUrl: "https://udocuments.vercel.app/",
     type: "next",
     logoUrld: [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/next-js.svg",
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/mongodb-icon-2.svg",
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
     ],
   },
