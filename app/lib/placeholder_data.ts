@@ -89,7 +89,7 @@ const projects = [
     id: 4,
     name: "UDocument",
     description:
-      "Full stack Next.js app with server side actions.",
+      "Full stack Next.js app with server side actions and multiple languages.",
     photoUrl:
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/udocument.png",
     projectCode: "https://github.com/Kost90/udocuments",
