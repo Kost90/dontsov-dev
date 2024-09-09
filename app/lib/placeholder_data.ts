@@ -19,7 +19,7 @@ const projects = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     name: "Github Repo - Kanban Board",
     description:
       "React application, created with Vite. Data from Github API fetched with octokit. For UI used chakra ui. For dragable and droppable I used dnd.",
@@ -35,26 +35,26 @@ const projects = [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
     ],
   },
-  // {
-  //   id: 1,
-  //   name: "All plastic world",
-  //   description:
-  //     "React.js SPA, created with Vite. Backend created with PostgreSQL and Sequelize ORM. Animations created with framer motion and 3D animation - created with React three fiber (three.js). CSS created with Tailwind CSS. Currently in progress.",
-  //   photoUrl:
-  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/allplasticworld.png",
-  //   projectCode: "https://github.com/Kost90/allplastic-world",
-  //   projectUrl: "https://allplastic-world-29d4.vercel.app/",
-  //   type: "react-app",
-  //   logoUrld: [
-  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
-  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
-  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
-  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/logo-javascript.svg",
-  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
-  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/postgresql.svg",
-  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
-  //   ],
-  // },
+  {
+    id: 1,
+    name: "RateRequest",
+    description:
+      "React.js full stack app, created with Vite. Backend created with AWS Amplify and other different services. For Data Base using PostrgreSQL deployed to the AWS.",
+    photoUrl:
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/requestRate.png",
+    projectCode: "https://github.com/Kost90/requester_sender",
+    projectUrl: "https://requester-sender.vercel.app/",
+    type: "react-app",
+    logoUrld: [
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/logo-javascript.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/postgresql.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
+    ],
+  },
   {
     id: 2,
     name: "Aperture",
@@ -93,7 +93,7 @@ const projects = [
     photoUrl:
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/udocument.png",
     projectCode: "https://github.com/Kost90/udocuments",
-    projectUrl: "https://udocuments.vercel.app/",
+    projectUrl: "https://www.udocument.net/",
     type: "next",
     logoUrld: [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/next-js.svg",
