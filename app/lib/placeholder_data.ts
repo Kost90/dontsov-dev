@@ -1,5 +1,23 @@
 const projects = [
   {
+    id: 12,
+    name: "Weather forecast",
+    description:
+      "This project is designed to showcase my React skills by building a simple application that consumes openmeteo API endpoints. In this project you can enter city or town name to the text input and receive a weather data for 5 days in real time.",
+    photoUrl:
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/weather-forcaste.png",
+    projectCode: "https://github.com/Kost90/weather-forecast",
+    projectUrl: "https://kost-weather-forecast.netlify.app/",
+    type: "react-app",
+    logoUrld: [
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
+    ],
+  },
+  {
     id: 10,
     name: "ETH Calculator",
     description:
