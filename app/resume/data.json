@@ -1,0 +1,114 @@
+{
+    "personalInfo": {
+      "name": "Kostiantyn Dontsov",
+      "role": "Full stack developer",
+      "phone": "+44 7467 690 397",
+      "email": "kostdonc90@gmail.com",
+      "location": "United Kingdom, Winchester",
+      "portfolio": "https://dontsov-dev.vercel.app/",
+      "linkedin": "https://www.linkedin.com/in/kostiantyn-dontsov/",
+      "availability": "open for relocation or remote"
+    },
+    "summary": [
+      "Full Stack Developer with over 1.5 years of experience in web application development.",
+      "Proficient in technologies such as React, Node.js, PostgreSQL, MongoDB, and other modern tools.",
+      "Optimized database query execution, reducing data processing time from 18 to 9 minutes by implementing connection pooling and bulk insertion.",
+      "Integrated Elasticsearch to enhance global search functionalities.",
+      "Created backend side on Node.js with routes, controllers, services, repositories, middleware, validators, DTO, and Jest tests.",
+      "Developed React components, helpers, hooks, services on the front end and connected them together.",
+      "Created post management for an educational platform.",
+      "Developed responsive websites with HTML, CSS, and JavaScript, achieving a 90-100 score in Google Core Web Vitals."
+    ],
+    "languages": [
+      "JavaScript/TypeScript",
+      "Python - basic",
+      "SQL"
+    ],
+    "technologies": [
+      "Node.js",
+      "React",
+      "Next.js",
+      "React Router DOM",
+      "Gatsby.js",
+      "Express.js",
+      "OOP",
+      "REST API",
+      "Design patterns",
+      "React testing library",
+      "Redux",
+      "SCSS",
+      "MUI, Tailwind CSS",
+      "Webpack, Gulp",
+      "AWS",
+      "Postman",
+      "Jest",
+      "Nest.js",
+      "Docker"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL"
+    ],
+    "sourceControl": [
+      "Git",
+      "Bitbucket"
+    ],
+    "tools": [
+      "GitHub",
+      "Trello",
+      "Jira",
+      "Slack"
+    ],
+    "workHistory": [
+      {
+        "company": "Meduzzen",
+        "period": "July 2024 – Present",
+        "position": "Junior Full stack developer",
+        "responsibilities": [
+          "Created backend on Node.js with routes, controllers, services, repositories, middleware, validators, DTO, and Jest tests.",
+          "Developed React components, helpers, hooks, and services on the front end and connected them together.",
+          "Created post management for an educational platform.",
+          "Implemented unit tests with Jest for backend and frontend functionality.",
+          "Developed JavaScript scripts to automate data migration from old MySQL databases to new MySQL and MongoDB databases.",
+          "Enhanced database query performance by reducing execution time using bulk insertion and connection pooling.",
+          "Integrated Elasticsearch for searching posts and comments using multiple keywords, synchronized with Elasticsearch Cloud Store.",
+          "Implemented data validation and keyword highlighting in search results."
+        ]
+      },
+      {
+        "company": "Digital Horizon AweGoo",
+        "period": "May 2024 – July 2024",
+        "position": "Full stack developer (Internship)",
+        "responsibilities": [
+          "Conducted code reviews and optimized performance across multiple areas of the project.",
+          "Developed backend components with AWS Amplify Gen 2, including queries, API endpoints, and Lambda functions.",
+          "Integrated AWS Amplify authentication on both backend and frontend.",
+          "Connected PostgreSQL database to AWS RDS and created SQL queries to manage data.",
+          "Developed Lambda functions to automate data retrieval from Amazon APIs and store it in the database.",
+          "Created and deployed API endpoints using AWS API Gateway.",
+          "Implemented frontend functions to fetch data from the backend, ensuring seamless communication between client and server."
+        ]
+      },
+      {
+        "company": "Self-employed, volunteer",
+        "period": "Feb 2023 – July 2024",
+        "position": "Full stack developer",
+        "responsibilities": [
+          "Developed visually appealing and responsive websites with HTML, CSS, and JavaScript, achieving 90-100 scores in Google Core Web Vitals.",
+          "Built a React application integrated with OpenAI's API, supported by a Node.js/Express backend and PostgreSQL database.",
+          "Implemented UI/UX using Material UI and Tailwind CSS.",
+          "Created an interactive map application with the MapTiler API for dynamic map interactions.",
+          "Developed a full-stack ecommerce application using Next.js (TypeScript), Node.js/Express, PostgreSQL with Prisma ORM, and AWS S3 for image storage.",
+          "Built a Kanban board with GitHub issues integration and drag-and-drop functionality using the GitHub API."
+        ]
+      }
+    ],
+    "education": [
+      "National Academy of Law - Master’s degree in law",
+      "Hillel IT School, Ukraine - TypeScript, React, Front-end, and Node.js courses",
+      "Codefinity - SQL, Next.js courses",
+      "W3Schools, London - Web development bootcamp"
+    ],
+    "references": "Available on request"
+  }

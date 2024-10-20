@@ -1,12 +1,4 @@
-import {
-  workHistory,
-  summary,
-  languages,
-  technologies,
-  dataBases,
-  sourceControl,
-  tools,
-} from "@/app/resume/data";
+import data from '@/app/resume/data.json';
 import Pictures from "./Picture";
 import WorkHistoryList from "./WorkHistoryList";
 import List from "./List";
@@ -28,18 +20,18 @@ function Contentwrapper() {
         Classname="mb-10 mt-10"
       />
       <div className="flex flex-col w-full gap-5 md:max-w-[50%]">
-        <List title="PERSONAL PROFILE:" listItems={summary} delay={1.3} />
+        <List title="PERSONAL PROFILE:" listItems={data.summary} delay={1.3} />
         <List title="KEY SKILLS:" delay={2} />
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col gap-1">
-            <List title="Languages:" listItems={languages} delay={3} />
-            <List title="Databases:" listItems={dataBases} delay={3} />
-            <List title="Source control:" listItems={sourceControl} delay={3} />
-            <List title="Tools:" listItems={tools} delay={3} />
+            <List title="Languages:" listItems={data.languages} delay={3} />
+            <List title="Databases:" listItems={data.databases} delay={3} />
+            <List title="Source control:" listItems={data.sourceControl} delay={3} />
+            <List title="Tools:" listItems={data.tools} delay={3} />
           </div>
-          <List title="Technologies:" listItems={technologies} delay={3} />
+          <List title="Technologies:" listItems={data.technologies} delay={3} />
         </div>
-        {workHistory.map((el, i) => (
+        {data.workHistory.map((el, i) => (
           <WorkHistoryList
             period={el.period}
             position={el.position}
