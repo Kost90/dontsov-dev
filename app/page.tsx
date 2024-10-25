@@ -14,7 +14,7 @@ export default function Home() {
         <Typewritter />
       </div>
       <Paragraphs
-        text="I'm Junior Full stack developer with 1 year of professional experience in building web applications using"
+        text="I'm Full stack developer with 1.5 year of professional experience in building web applications using"
         span={" React."}
         delay={7.5}
         position={-20}

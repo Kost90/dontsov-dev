@@ -1,22 +1,28 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { archivo, spaceGrotesk } from "../fonts";
 import Blur from "@/public/pictures/blur/blur.png";
 import styles from "./styles/Cards.module.css";
+import { motion } from "framer-motion";
 
 type CardCarouselProps = {
-  srcPhotos: string;
+  srcPhotos: string | StaticImageData;
   Logos: string[];
   titel: string;
   i: number;
   id: string | number;
+  animate: boolean;
 };
 
 export function Cardcarousel(props: CardCarouselProps) {
   return (
     <>
-      <div
-        className="hover:bg-black w-full h-full cursor-pointer"
+      <motion.div
+        className="hover:bg-black w-full h-full cursor-pointer overflow-hidden"
+        initial={{ scaleY: 0 }}
+        animate={props.animate ? { scaleY: 1 } : {}}
+        style={{ transformOrigin: "bottom" }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
         key={props.i}
       >
         <Image
@@ -30,7 +36,7 @@ export function Cardcarousel(props: CardCarouselProps) {
           alt={`${props.i}`}
           className="hover:opacity-0 duration-500 w-full !h-full !object-fill md:object-cover"
         />
-      </div>
+      </motion.div>
       <div className={styles.div_hover}>
         <h2
           className={`!text-slate-300 font-bold text-2xl transform -translate-y-full uppercase ${archivo.className}`}
