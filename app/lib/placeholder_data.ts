@@ -7,7 +7,7 @@ const projects = [
     photoUrl:
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/weather-forcaste.png",
     projectCode: "https://github.com/Kost90/weather-forecast",
-    projectUrl: "https://kost-weather-forecast.netlify.app/",
+    projectUrl: "https://weather-forecast-azure-two.vercel.app/",
     type: "react-app",
     logoUrld: [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
@@ -73,20 +73,20 @@ const projects = [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
     ],
   },
-  {
-    id: 2,
-    name: "Aperture",
-    description:
-      "Landing responsive website. Created using HTML, SCSS, JavaScript.",
-    photoUrl: "https://kostportfolio.s3.eu-west-2.amazonaws.com/apertur.png",
-    projectCode: "https://github.com/Kost90/aperture",
-    projectUrl: "https://kost90.github.io/aperture/",
-    type: "html-css",
-    logoUrld: [
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
-    ],
-  },
+  // {
+  //   id: 2,
+  //   name: "Aperture",
+  //   description:
+  //     "Landing responsive website. Created using HTML, SCSS, JavaScript.",
+  //   photoUrl: "https://kostportfolio.s3.eu-west-2.amazonaws.com/apertur.png",
+  //   projectCode: "https://github.com/Kost90/aperture",
+  //   projectUrl: "https://kost90.github.io/aperture/",
+  //   type: "html-css",
+  //   logoUrld: [
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
+  //   ],
+  // },
   {
     id: 3,
     name: "DomiLTD",
@@ -134,22 +134,22 @@ const projects = [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
     ],
   },
-  {
-    id: 6,
-    name: "DM Makeup",
-    description:
-      "Front end: Next.js app. Landing page with load more photos logic.",
-    photoUrl: "https://kostportfolio.s3.eu-west-2.amazonaws.com/makeup.png",
-    projectCode: "https://github.com/Kost90/makeup-dm",
-    projectUrl: "https://makeup-dm.com/",
-    type: "next",
-    logoUrld: [
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/next-js.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/redux-logo-svgrepo-com.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
-    ],
-  },
+  // {
+  //   id: 6,
+  //   name: "DM Makeup",
+  //   description:
+  //     "Front end: Next.js app. Landing page with load more photos logic.",
+  //   photoUrl: "https://kostportfolio.s3.eu-west-2.amazonaws.com/makeup.png",
+  //   projectCode: "https://github.com/Kost90/makeup-dm",
+  //   projectUrl: "https://makeup-dm.com/",
+  //   type: "next",
+  //   logoUrld: [
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/next-js.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/redux-logo-svgrepo-com.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
+  //   ],
+  // },
   {
     id: 7,
     name: "Map app",
@@ -166,25 +166,25 @@ const projects = [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/sass-1.svg",
     ],
   },
-  {
-    id: 8,
-    name: "Resume generator",
-    description:
-      "Full stack React web application, you can create a CV with ChatGPT API.",
-    photoUrl:
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/resume-generator.png",
-    projectCode: "https://github.com/Kost90/resumeGenerator",
-    projectUrl: "https://main--reliable-souffle-132785.netlify.app/",
-    type: "react-app",
-    logoUrld: [
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/logo-javascript.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/postgresql.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/redux-logo-svgrepo-com.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/sass-1.svg",
-    ],
-  },
+  // {
+  //   id: 8,
+  //   name: "Resume generator",
+  //   description:
+  //     "Full stack React web application, you can create a CV with ChatGPT API.",
+  //   photoUrl:
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/resume-generator.png",
+  //   projectCode: "https://github.com/Kost90/resumeGenerator",
+  //   projectUrl: "https://main--reliable-souffle-132785.netlify.app/",
+  //   type: "react-app",
+  //   logoUrld: [
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/logo-javascript.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/postgresql.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/redux-logo-svgrepo-com.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/sass-1.svg",
+  //   ],
+  // },
   {
     id: 9,
     name: "TODO APP",
