@@ -1,5 +1,23 @@
 const projects = [
   {
+    id: 4,
+    name: "Uproducts - ecommerce",
+    description:
+      "UProducts is an e-commerce platform with an admin panel, built using Next.js for the frontend and Node.js/Express for the backend. The server uses Prisma to interact with PostgreSQL, and Redis with express-session for session storage.",
+    photoUrl: "https://uproducts-new.s3.eu-west-2.amazonaws.com/uproducts-new.png",
+    projectCode: "https://github.com/Kost90/ecommerce-uproducts",
+    projectUrl: "https://ecommerce-uproducts.vercel.app/",
+    type: "next",
+    logoUrld: [
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/next-js.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/postgresql.svg",
+      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/redux-logo-svgrepo-com.svg",
+    ],
+  },
+  {
     id: 12,
     name: "Weather forecast",
     description:
@@ -36,23 +54,23 @@ const projects = [
       "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/nodejs-3.svg",
     ],
   },
-  {
-    id: 11,
-    name: "Github Repo - Kanban Board",
-    description:
-      "React application, created with Vite. Data from Github API fetched with octokit. For UI used chakra ui. For dragable and droppable I used dnd.",
-    photoUrl:
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/kanban-board-repo-issues.png",
-    projectCode: "https://github.com/Kost90/kanban-board-git",
-    projectUrl: "https://kanban-board-git-issues.vercel.app/",
-    type: "react-app",
-    logoUrld: [
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
-    ],
-  },
+  // {
+  //   id: 11,
+  //   name: "Github Repo - Kanban Board",
+  //   description:
+  //     "React application, created with Vite. Data from Github API fetched with octokit. For UI used chakra ui. For dragable and droppable I used dnd.",
+  //   photoUrl:
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/kanban-board-repo-issues.png",
+  //   projectCode: "https://github.com/Kost90/kanban-board-git",
+  //   projectUrl: "https://kanban-board-git-issues.vercel.app/",
+  //   type: "react-app",
+  //   logoUrld: [
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/html-1.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/css-3.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/ts-logo-256.svg",
+  //   ],
+  // },
   {
     id: 1,
     name: "RateRequest",
@@ -108,8 +126,7 @@ const projects = [
     name: "UDocument",
     description:
       "Full stack Next.js app with server side actions and multiple languages.",
-    photoUrl:
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/udocument.png",
+    photoUrl: "https://kostportfolio.s3.eu-west-2.amazonaws.com/udocument.png",
     projectCode: "https://github.com/Kost90/udocuments",
     projectUrl: "https://www.udocument.net/",
     type: "next",
@@ -150,22 +167,22 @@ const projects = [
   //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/tailwind-css-2.svg",
   //   ],
   // },
-  {
-    id: 7,
-    name: "Map app",
-    description:
-      "React app with integrated map. You can add new object to the map, all objects are clustering. When you zoomin or zoomout tour cardlist is filtering and show you objects are you seeing in your map. All objects in a map a clickebled.",
-    photoUrl: "https://kostportfolio.s3.eu-west-2.amazonaws.com/mapapp.png",
-    projectCode: "https://github.com/Kost90/test-task",
-    projectUrl: "https://test-task-liard-mu.vercel.app/",
-    type: "react-app",
-    logoUrld: [
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/logo-javascript.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/redux-logo-svgrepo-com.svg",
-      "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/sass-1.svg",
-    ],
-  },
+  // {
+  //   id: 7,
+  //   name: "Map app",
+  //   description:
+  //     "React app with integrated map. You can add new object to the map, all objects are clustering. When you zoomin or zoomout tour cardlist is filtering and show you objects are you seeing in your map. All objects in a map a clickebled.",
+  //   photoUrl: "https://kostportfolio.s3.eu-west-2.amazonaws.com/mapapp.png",
+  //   projectCode: "https://github.com/Kost90/test-task",
+  //   projectUrl: "https://test-task-liard-mu.vercel.app/",
+  //   type: "react-app",
+  //   logoUrld: [
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/react-logo.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/logo-javascript.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/redux-logo-svgrepo-com.svg",
+  //     "https://kostportfolio.s3.eu-west-2.amazonaws.com/svg/sass-1.svg",
+  //   ],
+  // },
   // {
   //   id: 8,
   //   name: "Resume generator",
